@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8"/>
+    <base href="www"/>
+    <title>City Bubbles Virtual</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes"/>
+
+    <link rel="stylesheet" href="css/mobile-angular-ui-base.min.css"/>
+
+    <script src="cordova.js"></script>
+    <script src="js/libs/angular.js/angular.min.js"></script>
+    <script src="js/libs/angular.js/angular-route.min.js"></script>
+    <script src="js/libs/angular.js/mobile-angular-ui.min.js"></script>
+    <script src="js/app1/app.js"></script>
+    <script src="js/app1/services.js"></script>
+    <script src="js/app1/controllers.js"></script>
+</head>
+<body>
+<div class="app" style="background-color: #ffffff">
+    <ng-view class="ng-scope"></ng-view>
+</div>
+
+</body>
+</html>

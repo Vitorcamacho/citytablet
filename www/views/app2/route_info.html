@@ -1,0 +1,12 @@
+<div ng-controller="RoutesCtrl" overlay="myOverlay">
+    <h4 class="overlay-title">{{route.info_name}}</h4>
+
+    <p>
+        {{route.description}}
+    </p>
+
+    <p toggle="off" bubble target="myOverlay">
+        <span class="btn btn-primary" ng-click="choose_route(route)">Ok</span>
+        <span class="btn btn-default" ng-click="cancel()">Cancel</span>
+    </p>
+</div>

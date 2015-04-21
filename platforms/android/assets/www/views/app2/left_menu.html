@@ -1,0 +1,29 @@
+<h3 class="app-name" ng-click="checkToggle();" >Menu</h3>
+<div class="scrollable">
+    <div class="scrollable-content" style="overflow-y: scroll">
+        <div class="list-group" toggle="off" bubble target="mainSidebar">
+            <a class="list-group-item" onclick="window.location='index.html#/languages';"ng-click="clear();" ><i class="fa fa-home"></i> HOME</a>
+            <a style="text-align: center; background-color: #eeeeee" ng-click="showMenu('mainSidebar');" class="list-group-item"><b >ROUTES</b></a>
+
+            <div ng-repeat="route in routes">
+                <a ng-click="open_overlay(route); showMenu('mainSidebar');" class="list-group-item" > {{route.info_name}}
+                    <i class="fa fa-chevron-right"></i> </a>
+            </div>
+
+            <a style="text-align: center; background-color: #eeeeee" class="list-group-item" ng-click="showMenu('mainSidebar');"><b >HELP</b></a>
+            <a class="list-group-item" ng-click="near(); showMenu('mainSidebar');" ><i class="fa fa-warning"></i>  {{nearLanguage}}</a>
+
+            <a style="text-align: center; background-color: #eeeeee" class="list-group-item" ng-click="showMenu('mainSidebar');"></a>
+            <a class="list-group-item" ng-click="showMenu('mainSidebar');" >
+                <img height="30px" width="30px" ng-click="showMenu('mainSidebar');" ng-src="./img/maps/poi.png"> {{poiLanguage}}
+            </a>
+            <a class="list-group-item" ng-click="showMenu('mainSidebar');">
+                <img height="30px" width="30px" ng-click="showMenu('mainSidebar');" ng-src="./img/maps/gpoint.png"> {{gpointLanguage}}
+            </a>
+            <a class="list-group-item" ng-click="showMenu('mainSidebar');">
+                <img height="30px" width="30px" ng-click="showMenu('mainSidebar');" ng-src="./img/maps/pol.png"> {{polLanguage}}
+            </a>
+            <br><br><br><br>
+        </div>
+    </div>
+</div>

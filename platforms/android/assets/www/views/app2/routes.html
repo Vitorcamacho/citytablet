@@ -1,0 +1,38 @@
+<div class="app">
+    <!-- Navbar -->
+    <div class="navbar navbar-app navbar-absolute-top">
+        <div class="btn-group pull-left">
+            <div ng-click="checkToggle()" class="btn btn-navbar sidebar-toggle">
+                <i class="fa fa-bars fa-lg"></i> Menu
+            </div>
+        </div>
+        <div class="btn-group pull-right">
+            <div class="btn btn-navbar" ng-click="updateGeo()">
+                Update <i class="fa fa-map-marker fa-lg"></i>
+            </div>
+        </div>
+    </div>
+    <div class="app-body">
+        <div id="map-canvas"></div>
+        <div id="map-aux"></div>
+    </div>
+</div>
+<div ng-include="'views/app2/left_menu.html'" class="sidebar sidebar-left" toggleable
+     parent-active-class="sidebar-left-in" id="mainSidebar" style="display: none"></div>
+<div ng-include="'views/app2/route_info.html'" style="overflow-y: scroll"></div>
+<div ng-include="'views/app2/charging.html'" style="overflow-y: scroll"></div>
+<div ng-include="'views/app2/pol_info.html'" style="overflow-y: scroll"></div>
+
+
+<style>
+    #map-canvas {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 50px;
+    }
+</style>

@@ -1,0 +1,20 @@
+<div ng-controller="RoutesCtrl" overlay="myOverlay3">
+    <img height="120px" width="200px" ng-src="{{pol.pol_image}}">
+    <br>
+    <br>
+    <br>
+    <h4 class="overlay-title">{{pol.pol_name}}</h4>
+
+    <p style="overflow-y: scroll">
+        {{pol.pol_name}}
+    </p>
+
+    <p toggle="off" bubble target="myOverlay3">
+        <span class="btn btn-primary" ng-click="choose_pol(pol)" style="margin-right: 20px">
+            <b style="font:xx-large">OK</b>
+        </span>
+        <span class="btn btn-default" ng-click="cancel()" style="margin-left: 20px">
+            <b style="font:xx-large">CANCEL</b>
+        </span>
+    </p>
+</div>
